@@ -1,0 +1,43 @@
+{% extends 'index.html'%}
+
+    <nav>
+        <div class="logo">
+            <img src="{% static 'images/logo.svg' %}">
+            <span>Plagiarism AppChecker</span>
+        </div>
+        <div class="nav-links">
+            <img src="{% static 'images/close-menu.svg' %}" class="mob">
+            <img src="{% static 'images/menu.svg' %}" id="menu" class="mob">
+            <div class="nav-link-cnt">
+                <a href="index.html">Home</a>
+                <a href="about-page.html" class="active">About</a>
+                <a href="checker-page.html" class="other">Checker</a>
+            </div>
+        </div>
+    </nav>
+    <main class="about-page">
+        <img src="{% static 'images/about-img.svg' %}">
+        <div class="cnt">
+            <header>
+                <img src="{% static 'images/error-sign.svg' %}">
+                About
+            </header>
+            <section>
+                <div>Description</div>
+                 Whether its copywriting a document, or publishing a 
+                document, without the rightful owner's consent is Plagiarism. 
+                Its a dime a dozen these days, that most people steal other's 
+                content without permission, taking all the credits as well, 
+                due to the fact that, they couldn't come up with their own ideas 
+                and resort to publishing a document or an article written by another 
+                person, a common reason for this, is to beat deadlines or avoid excess 
+                workload. With our online Check-it-out Plagiarism app, you have zero 
+                worries knowing if a document, proposal, or even an article is plagiarized. 
+                All you need do is to download our app and get started.
+            </section>
+        </div>
+    </main>
+    <footer style="position: absolute; bottom: 0px;">
+        <span>Team 4</span>
+        <span>@2020 ECX INTERNSHIP</span>
+    </footer>

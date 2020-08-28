@@ -1,0 +1,38 @@
+{% extends 'index.html'%}
+<nav>
+    <div class="logo">
+        <img src="{% static 'images/logo.svg' %}">
+        <span>Plagiarism AppChecker</span>
+    </div>
+    <div class="nav-links">
+        <img src="{% static 'images/close-menu.svg' %}" class="mob">
+        <img src="{% static 'images/menu.svg' %}"class="mob">
+        <div class="nav-link-cnt">
+            <a href="index.html">Home</a>
+            <a href="about-page.html">About</a>
+            <a href="checker-page.html" class="other active">Checker</a>
+        </div>
+    </div>
+</nav>
+<main class="checker-page">
+    <div>
+        <span>Check Plaigiarism</span>
+        <span id="txt-count">0 / 500 Words</span>
+    </div>
+    <div>
+        <legend for="text-cont">Place your text here</legend>
+        <textarea id="text-cont" onkeyup = "changeBottomBorder()">
+        </textarea>
+    </div>
+    <div>
+        <button onclick="window.location.assign('result-page.html')">RUN</button>
+        <button id="cancel">CANCEL</button>
+    </div>
+    <div id="errorMsg">
+        Sorry! Text cannot exceed <br>500 words.
+    </div>
+</main>
+<footer>
+    <span>Team 4</span>
+    <span>@2020 ECX INTERNSHIP</span>
+</footer>

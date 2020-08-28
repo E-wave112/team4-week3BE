@@ -1,0 +1,88 @@
+
+    <nav>
+        <div class="logo">
+            <img src="{% static 'images/logo.svg' %}">
+            <span>Plagiarism AppChecker</span>
+        </div>
+        <div class="nav-links">
+            <img src="{% static 'images/close-menu.svg' %}" class="mob">
+            <img src="{% static 'images/menu.svg' %}" class="mob">
+            <div class="nav-link-cnt">
+                <a href="index.html">Home</a>
+                <a href="about-page.html">About</a>
+                <a href="checker-page.html" class="other active">Checker</a>
+            </div>
+        </div>
+    </nav>
+    <main class="result-page">
+        <div>
+            <span>Result</span>
+            <img src="{% static 'images/download.svg' %}" class="download" id="download">
+        </div>
+        <div>
+            <div>
+                <img src="{% static 'images/red-tick.svg' %}">
+                <div id="plaigiarism-percent">75%</div>
+                Plaigarised
+            </div>
+            <div>
+                <img src="{% static 'images/green-tick.svg' %}">
+                <div id="unique-percent">25%</div>
+                Unique
+            </div>
+        </div>
+        <div>
+            <div>
+                <div id="plaigarised-resp">
+                    <i>
+                        your plaigiarised response goes here
+                        Est dolore sanctus sanctus tempor ea rebum elitr invidunt no, lorem elitr dolor no accusam dolores takimata voluptua sanctus, accusam et justo ea erat erat. Invidunt nonumy ut tempor et sed et et. Ut tempor aliquyam tempor sadipscing dolores rebum, ut duo tempor erat et et voluptua et at ea. Sanctus invidunt accusam consetetur consetetur labore sea duo, kasd magna et lorem diam gubergren sed ipsum accusam. Accusam clita est et aliquyam justo kasd voluptua. Et consetetur dolor lorem sanctus et gubergren eirmod gubergren. Clita amet takimata tempor erat sadipscing stet. Takimata amet est ea sea et clita eos tempor accusam. Tempor amet consetetur dolor takimata dolor ipsum. Eirmod sea gubergren et labore sed sed vero magna diam, dolor amet et aliquyam dolores justo duo. Justo no sanctus amet at eirmod sit. Consetetur ea no diam dolor et. Stet et lorem sanctus sed eirmod sit et dolor, invidunt stet dolor dolore at magna. Aliquyam justo clita clita dolores dolor sadipscing. Sit at stet ea sadipscing takimata et ipsum est elitr. Justo ipsum dolore sadipscing sit ea at, justo invidunt dolor erat et lorem sed, amet ipsum consetetur erat consetetur sadipscing erat, amet aliquyam at dolor sadipscing ea, dolore erat consetetur et labore nonumy sed. Dolores elitr voluptua vero tempor. Sea duo vero sed amet sit vero diam eirmod diam. Aliquyam clita lorem stet at takimata sed sit diam. Kasd et gubergren dolor consetetur dolor, ea clita dolor invidunt gubergren aliquyam, accusam est kasd no elitr sanctus sed est gubergren accusam. Sanctus ut stet eirmod sanctus no amet voluptua, sit eirmod tempor eos diam dolore sanctus voluptua, lorem ea dolores amet et diam duo voluptua ea elitr, eirmod ut no dolores diam et, duo dolor labore diam sanctus elitr, sea sanctus dolor tempor et dolor, justo erat eos consetetur est aliquyam et, gubergren duo takimata sed voluptua ut diam invidunt sea voluptua. Eirmod et justo accusam at gubergren dolore. Et accusam lorem et amet nonumy diam et sit sit, tempor magna sadipscing labore sed. Eos stet sadipscing gubergren justo diam sed sadipscing, tempor sed dolore clita sea ut sed. Et kasd amet nonumy et kasd sed, et sanctus accusam erat tempor ut dolores sed. Kasd dolor takimata ut dolore eos amet clita tempor, ipsum sed dolor elitr sadipscing sea ipsum, at dolor sit et ea kasd lorem. Rebum consetetur et accusam dolor stet at elitr et takimata. Dolor labore et accusam justo, consetetur no diam justo eirmod. Dolor lorem eirmod et stet dolor, ipsum lorem erat sit est. Lorem sanctus ipsum et et invidunt dolores accusam, accusam magna duo dolores dolor. Ipsum et clita dolor clita gubergren diam, dolor nonumy eos takimata no diam justo vero. Rebum vero lorem magna et dolor invidunt lorem aliquyam kasd. Et sed diam sed justo et dolor sed. Erat magna dolore rebum ut sanctus, ut elitr magna at labore eirmod, sadipscing ea sed takimata dolor ea invidunt. At duo nonumy kasd dolor eirmod invidunt diam et, at et eos dolor no, ipsum rebum consetetur sadipscing.
+                    </i>
+                </div>
+                <div>Plagarised Site Spotted</div>
+                <a href="" id="link-to-site">https://en.wikipedia.org/wiki/Farmhouse</a>
+            </div>
+            <div>
+                <div id="unique-resp">
+                    <i>
+                        your unique response goes here
+                    </i>
+                </div>
+                <div>Unique</div>
+            </div>
+        </div>
+        <aside class="downloadScreen" id="downloadScreen">
+            <div id="screen-one">
+                <img src="{% static 'images/cancel.svg' %}" id="cancel-download">
+                <div>
+                    <header>Download report</header>
+                    <div class="text-cnt">
+                        <div class="heading">
+                            <span id="file-type">Download as</span>
+                            <img src="{% static 'images/download.svg' %}" id="open-drops">
+                        </div>
+                        <div id="drops" class="dropdown-cont">
+                            <div id="doc" class="options">Doc</div>
+                            <hr>
+                            <div id="docx" class="options">Docx</div>
+                            <hr>
+                            <div id="PDF" class="options">PDF</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="next-dslide" id="next-dslide">Next</div>
+            </div>
+            <div class="downloadScreen2" id="screen-two">
+                <header>Do you want to download?</header>
+                <div>
+                    <span id="yes">Yes</span>
+                    <span id="no">No</span>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <span>Team 4</span>
+        <span>@2020 ECX INTERNSHIP</span>
+    </footer>
+    <script src="{% static 'script.js' %}"></script>

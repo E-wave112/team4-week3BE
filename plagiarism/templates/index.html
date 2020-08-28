@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Plaigarism checker  {% endblock %}</title>
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="{% static 'images/logo.svg' %}">
+            <span>Plagiarism AppChecker</span>
+        </div>
+        <div class="nav-links" id="menu-drop">
+            <img src="{% static 'images/menu.svg' %}" id="menu" class="mob">
+            <div class="nav-link-cnt">
+                <a href="index.html" class="active">Home</a>
+                <a href="about-page.html">About</a>
+                <a href="checker-page.html">Checker</a>
+            </div>
+        </div>
+    </nav>
+    <main class="home-page">
+        <img src="{% static 'images/main-img.svg' %}">
+        <div class="cnt">
+            <header>Plagiarism AppChecker</header>
+            <p>
+                Plagiarism AppChecker is an extremely effective 
+                way to check your essays or dissertations for any 
+                instances that may arise that could suggest 
+                plagiarism to a potential marker.
+            </p>
+            <a href="checker-page.html" class="checker-link">
+                Go to Checker
+            </a>
+        </div>
+    </main>
+    <footer>
+        <span>Team 4</span>
+        <span>@2020 ECX INTERNSHIP</span>
+    </footer>
+    <script>
+        let menu, mDrop, ham, closes;
+            menu = document.querySelector('#menu');
+            mDrop = document.querySelector('#menu-drop');
+            ham = 'images/menu.svg';
+            closes = 'images/close-menu.svg';
+            menu.onclick = function() {
+                console.log('click');
+            if (menu.src.match(ham)) {
+                menu.src = closes;
+                mDrop.style.display = 'flex';
+            } else {
+                menu.src = 'images/menu.svg';
+                mDrop.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

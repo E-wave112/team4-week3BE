@@ -1,0 +1,31 @@
+<nav>
+    <div class="logo">
+        <img src="{% static 'images/logo.svg' %}" class="mob">>
+        <span>Plagiarism AppChecker</span>
+    </div>
+    <div class="nav-links">
+        <img src="{% static 'images/close-menu.svg' %}" class="mob">
+        <img src="{% static 'images/menu.svg' %}" class="mob">
+        <div class="nav-link-cnt">
+            <a href="index.html">Home</a>
+            <a href="about-page.html">About</a>
+            <a href="checker-page.html" class="other active">Checker</a>
+        </div>
+    </div>
+</nav>
+<main class="download-page">
+    <a href="result-page.html">Back</a>
+    <div>
+        <img src="{% static 'images/gold-tick.svg' %}" class="mob">
+        <div class="DS">Download Successful</div>
+        <div class="DS-btn">
+            <button>Share report</button>
+            <button onclick="location.replace('index.html')">Exit</button>
+        </div>
+    </div>
+</main>
+<footer>
+    <span>Team 4</span>
+    <span>@2020 ECX INTERNSHIP</span>
+</footer>
+<script src="{% static 'script.js' %}"></script>
